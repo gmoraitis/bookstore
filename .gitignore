@@ -1,0 +1,45 @@
+# Python byte-code
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+
+# Test and coverage
+.pytest_cache/
+coverage*
+htmlcov/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Local configuration
+local_settings.py
+config.ini  # Or any other config file
+
+# Database files
+*.sqlite
+*.db
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Flask-specific
+instance/
+
+# Additional patterns
+# npm-debug.log
+# *.swp

@@ -6,6 +6,15 @@ A simple fullstack app - exercise to guide me throught the process of adding an 
 
 #### 1. Project Setup and Backend Development
 - Create a new Python project directory and set up a virtual environment to isolate project dependencies.
+- Inside the project folder
+```bash
+python -m venv venv
+```
+- Activate the virual Enviroment
+```bash
+source venv/bin/activate
+```
+
 - Install Flask and database library.
     -   #### ! Which database ? Knowlegde here:
         - `PostgreSQL` is a robust, open-source relational database system known for its reliability, performance, and feature-richness. It's an excellent choice for our book manager application.
@@ -23,6 +32,21 @@ A simple fullstack app - exercise to guide me throught the process of adding an 
 - Define database models for books (title, author, etc.).
 - Create Flask app with routes for book CRUD operations (create, read, update, delete).
 - Implement database interactions using PostgreSQL and Flask-SQLAlchemy.
+
+```bash
+pip install Flask Flask-SQLAlchemy psycopg2
+```
+This will install:
+
+Flask: The web framework for our application.
+Flask-SQLAlchemy: For database interactions.
+psycopg2: The PostgreSQL adapter for Python.
+
+
+##### Building the Flask app and defining the database model.
+- 
+
+
 #### 2. Frontend Development with React
 - Create a new React project using Vite.
 - Design UI components for book listing, book form, and user interface (simple design for the meaning of the project).
@@ -49,4 +73,6 @@ A simple fullstack app - exercise to guide me throught the process of adding an 
 - `mkdir`: to create the directory of the project
 - `cd [bookstore]` : to move to the new directory
 - `touch [README.md]` : to create a new file,  and also the same for gitignore
+- `rm -r [virtualenv]` : to delete a wrongly setup of venv folder
+
  

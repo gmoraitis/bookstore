@@ -44,7 +44,13 @@ psycopg2: The PostgreSQL adapter for Python.
 
 
 ##### Building the Flask app and defining the database model.
-- 
+- We need to :
+    - Import Flask and Flask-SQLAlchemy.
+    - Create a Flask application instance.
+    - Configure the database URI with your PostgreSQL credentials.
+    - Create a SQLAlchemy instance.
+    - Define the Book model with columns for id, title, and author.
+    - (is obligatory ? )The __repr__ method provides a string representation of a book instance for debugging purposes.
 
 
 #### 2. Frontend Development with React

@@ -50,7 +50,37 @@ psycopg2: The PostgreSQL adapter for Python.
     - Configure the database URI with your PostgreSQL credentials.
     - Create a SQLAlchemy instance.
     - Define the Book model with columns for id, title, and author.
+    - ! First create a table from the Postgresql command line and then use the API(app.py) !
+    - ? Do we need  def to_dict(self): method ?
     - (is obligatory ? )The __repr__ method provides a string representation of a book instance for debugging purposes.
+
+Added procedure:
+run the local database
+```bash
+sudo -u postgres psql -d bookstore
+```
+run the app.py
+```bash
+python3 app.py
+```
+make requests with curl
+```bash
+# create books
+curl -X POST -H "Content-Type: application/json" -d '{
+"title": "The book of my life", "author": "john Doe"}' http://127.0.0.1:5000/books
+
+# get books or a spesific book
+curl http://127.0.0.1:5000/books
+curl http://127.0.0.1:5000/books/<id>
+
+# update book
+curl -X POST -H "Content-Type: application/json" -d '{
+"title": "The book of my life", "author": "john Doe"}' http://127.0.0.1:5000/books
+
+# delete a book
+curl -X DELETE http://127.0.0.1:5000/books/<id>
+
+
 
 
 #### 2. Frontend Development with React

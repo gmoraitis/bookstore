@@ -1,4 +1,4 @@
-Flask
+Flask==2.3.3
 Flask_SQLAlchemy==3.0.0
 flask_oidc==1.4.0
 SQLAlchemy==2.0.0

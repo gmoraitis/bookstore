@@ -7,8 +7,11 @@ __pycache__/
 .Python
 
 # Virtual environment
-venv/
+backend/venv/
 env/
+
+# Environment variables
+backend/.env
 
 # Test and coverage
 .pytest_cache/
@@ -43,3 +46,17 @@ instance/
 # Additional patterns
 # npm-debug.log
 # *.swp
+
+# Frontend-specific
+frontend/node_modules/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/.cache/
+frontend/build/
+frontend/dist/
+frontend/.next/
+
+# Ignore lockfiles (optional)
+*.lock

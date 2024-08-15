@@ -9,6 +9,8 @@ load_dotenv()
 # Create a Flask application instance
 app = Flask(__name__)
 
+# Print the DATABASE_URL to check if it's correctly loaded
+print("DATABASE_URL:", os.getenv('DATABASE_URL'))
 # Configure the database URI using an environment variable
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://localhost/your_local_db_name')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

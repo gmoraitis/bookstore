@@ -12,7 +12,6 @@ app = Flask(__name__)
 
 # Configure the database URI using an environment variable
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL_PUBLIC', 'postgresql://localhost/your_local_db_name')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Create a SQLAlchemy instance for database management
 db = SQLAlchemy(app)

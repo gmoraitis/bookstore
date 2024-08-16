@@ -79,8 +79,10 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 # delete a book
 curl -X DELETE http://127.0.0.1:5000/books/<id>
+```
 
-
+## Important Note
+The database and flask deployment were done in Railway. The current sttus is working. The next steps are to make the frontend with Reactjs and also deploy that.
 
 
 #### 2. Frontend Development with React
